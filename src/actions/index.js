@@ -64,7 +64,7 @@ export const updateVideo = (id,data) => async (dispatch) => {
 export const getHistory = () => async (dispatch) => {
     try{
         var data
-        await fetch('http://localhost:8000/history')
+        await fetch('https://convin-server-dun.vercel.app/history')
             .then(res => {
                 if(res.ok){
                     // console.log('response');
