@@ -19,7 +19,7 @@ function CreateForm({bucketName,setIsFormOpen}) {
     const handleSubmit = async () => {
         // e.preventDefault();
         const final_cat = category=='Add new category'?newCategory:category
-        await fetch('http://localhost:8000/videos',{
+        await fetch('https://convin-server-dun.vercel.app/videos',{
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({title,url,category:final_cat})
