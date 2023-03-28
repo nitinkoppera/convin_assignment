@@ -5,7 +5,7 @@ const history = async (history = [], action) => {
             return action.payload
         }
         case 'CREATE_HISTORY':{
-            await fetch('http://localhost:8000/history',{
+            await fetch('https://convin-server-dun.vercel.app/history',{
                 method: 'POST',
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(action.payload)
