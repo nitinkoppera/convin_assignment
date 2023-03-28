@@ -2,7 +2,7 @@ export const getVideos = () => async (dispatch) => {
     try{
         var data
         // console.log('hellooooo');
-        await fetch('http://localhost:8000/videos')
+        await fetch('https://convin-server-dun.vercel.app/videos')
             .then(res => {
                 if(res.ok){
                     // console.log('response');
