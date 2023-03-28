@@ -1,0 +1,16 @@
+{
+  "videos": [
+    {
+      "title": "React",
+      "url": "qdCHEUaFhBk",
+      "category": "Entertainment Videos",
+      "id": 1
+    },
+    {
+      "title": "Framer",
+      "url": "N6d0uACGOVY",
+      "category": "Educational Videos",
+      "id": 2
+    }
+  ]
+}
