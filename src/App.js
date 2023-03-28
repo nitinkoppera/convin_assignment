@@ -40,55 +40,55 @@ function App() {
             <Route path="/history" element={<History />} />
             <Route path="/" element={
                 <div>
-                <Draggable
-                //   axis="x"
-                  handle=".handle"
-                  defaultPosition={{x: 0, y: 0}}
-                  position={null}
-                //   grid={[25, 25]}
-                //   scale={1}
-                  onStart={(e) => {
-                    console.log('start')
-                    console.log(e)}}
-                  onDrag={(e) => {
-                    console.log('drag')
-                    console.log(e)}}
-                  onStop={(e) => {
-                    console.log('stop')
-                    console.log(e)}}>
-                  <div>
-                    <div className="handle">Drag from here</div>
-                    <div>This readme is really dragging on...</div>
-                  </div>
-                </Draggable>
+//                 <Draggable
+//                 //   axis="x"
+//                   handle=".handle"
+//                   defaultPosition={{x: 0, y: 0}}
+//                   position={null}
+//                 //   grid={[25, 25]}
+//                 //   scale={1}
+//                   onStart={(e) => {
+//                     console.log('start')
+//                     console.log(e)}}
+//                   onDrag={(e) => {
+//                     console.log('drag')
+//                     console.log(e)}}
+//                   onStop={(e) => {
+//                     console.log('stop')
+//                     console.log(e)}}>
+//                   <div>
+//                     <div className="handle">Drag from here</div>
+//                     <div>This readme is really dragging on...</div>
+//                   </div>
+//                 </Draggable>
                 <BucketList videos={videos} />
                 </div>
             }/>
-            <Route path="/test" element={
-                <div>
-                <Draggable
-                //   axis="x"
-                  handle=".handle"
-                  defaultPosition={{x: 0, y: 0}}
-                  position={null}
-                //   grid={[25, 25]}
-                //   scale={1}
-                  onStart={(e) => {
-                    console.log('start')
-                    console.log(e)}}
-                  onDrag={(e) => {
-                    console.log('drag')
-                    console.log(e)}}
-                  onStop={(e) => {
-                    console.log('stop')
-                    console.log(e)}}>
-                  <div>
-                    <div className="handle">Drag from here</div>
-                    <div>This readme is really dragging on...</div>
-                  </div>
-                </Draggable>
-                </div>
-            }/>
+//             <Route path="/test" element={
+//                 <div>
+//                 <Draggable
+//                 //   axis="x"
+//                   handle=".handle"
+//                   defaultPosition={{x: 0, y: 0}}
+//                   position={null}
+//                 //   grid={[25, 25]}
+//                 //   scale={1}
+//                   onStart={(e) => {
+//                     console.log('start')
+//                     console.log(e)}}
+//                   onDrag={(e) => {
+//                     console.log('drag')
+//                     console.log(e)}}
+//                   onStop={(e) => {
+//                     console.log('stop')
+//                     console.log(e)}}>
+//                   <div>
+//                     <div className="handle">Drag from here</div>
+//                     <div>This readme is really dragging on...</div>
+//                   </div>
+//                 </Draggable>
+//                 </div>
+//             }/>
             </Routes>
         </div>
     </Router>
