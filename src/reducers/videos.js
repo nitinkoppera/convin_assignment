@@ -7,7 +7,7 @@ const videos = async (videos = [], action) => {
             return action.payload
         }
         case 'CREATE_VIDEO':{
-            await fetch('http://localhost:8000/videos',{
+            await fetch('https://convin-server-dun.vercel.app/videos',{
                 method: 'POST',
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(action.payload)
@@ -16,7 +16,7 @@ const videos = async (videos = [], action) => {
             })
         }
         case 'DELETE_VIDEO':{
-            fetch(`http://localhost:8000/videos/${action.payload}`, {
+            fetch(`https://convin-server-dun.vercel.app/videos/${action.payload}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
@@ -34,7 +34,7 @@ const videos = async (videos = [], action) => {
             });
         }
         case 'UPDATE_VIDEO':{
-            fetch(`http://localhost:8000/videos/${action.payload.id}`, {
+            fetch(`https://convin-server-dun.vercel.app/videos/${action.payload.id}`, {
                 method: 'PUT', // or 'PATCH' for partial update
                 headers: {
                     'Content-Type': 'application/json'
